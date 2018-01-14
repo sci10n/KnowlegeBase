@@ -35,7 +35,6 @@ public class KnowlegeBase {
 			String modFact = fact.substring(1);
 			return !facts.contains(modFact);
 		}
-		
 		return facts.contains(fact);
 	}
 	
@@ -43,7 +42,7 @@ public class KnowlegeBase {
 	public String toString() {
 		String output = "";
 		for(String f: facts) {
-			output += f + "\n";
+			output += f+ "\n";
 		}
 		return output;
 	}

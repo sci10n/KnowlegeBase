@@ -1,5 +1,7 @@
 package se.sciion.KB;
 
+import java.util.Arrays;
+
 public class Action {
 
 	final String[] precond;
@@ -38,5 +40,15 @@ public class Action {
 			}
 		}
 		return check;
+	}
+	
+	@Override
+	public String toString() {
+		String output = "";
+		output += Arrays.toString(precond) + "\n";
+		output += Arrays.toString(add_effect) + "\n";
+		output += Arrays.toString(delete_effect);
+		
+		return output;
 	}
 }
